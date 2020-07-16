@@ -1,6 +1,6 @@
 # The URL the site will be built for
 base_url = "https://mitchelldz.dev/"
-title = "SamTEST"
+title = "Mitchell's Blog"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
@@ -16,6 +16,7 @@ taxonomies = [
     # You can enable/disable RSS
     {name = "categories", rss = true},
     {name = "tags", rss = true},
+    {name = "authors", rss = true},
 ]
 
 theme = "zola_docsascode_theme"
