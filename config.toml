@@ -14,7 +14,6 @@ build_search_index = true
 
 taxonomies = [
     # You can enable/disable RSS
-    {name = "categories", rss = true},
     {name = "tags", rss = true},
     {name = "authors", rss = true},
 ]
@@ -23,25 +22,7 @@ theme = "zola_docsascode_theme"
 paginate_by = 5
 [extra]
 # Put all your custom variables here
-after_dark_menu = [
-   {url = "$BASE_URL", name = "Home"},
-   {url = "$BASE_URL/categories", name = "Categories"},
-   {url = "$BASE_URL/tags", name = "Tags"},
-   {url = "https://google.com", name = "Google"},
-]
 
-hyde_links = [
-    {url = "https://google.com", name = "Google.com"},
-    {url = "https://google.fr", name = "Google.fr"},
-]
-
-sam_menu = [
-    { text = "posts", link = "/posts" },
-    { text = "about", link = "/about" },
-    { text = "github", link = "https://github.com" }
-]
-sam_bottom_menu = true
 home = "home"
 date_format = "%a %b %e, %Y"
 
-after_dark_title = "My blog"
