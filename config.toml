@@ -1,6 +1,6 @@
 # The URL the site will be built for
-base_url = "https://mitchelldz.dev/"
-title = "Mitchell's Blog"
+base_url = "https://mitchelldz.dev"
+title = "Mitchell Dzurisin"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
@@ -14,11 +14,10 @@ build_search_index = true
 
 taxonomies = [
     # You can enable/disable RSS
+    {name = "categories", rss = true},
     {name = "tags", rss = true},
-    {name = "authors", rss = true},
 ]
 
-theme = "zola_docsascode_theme"
 paginate_by = 5
 [extra]
 # Put all your custom variables here
@@ -26,3 +25,19 @@ paginate_by = 5
 home = "home"
 date_format = "%a %b %e, %Y"
 
+# Social's
+social_twitter = 'https://twitter.com/MADLAB96'
+social_github = 'https://github.com/MADLAB96'
+social_linkedIn = 'https://www.linkedin.com/in/mitchell-dzurisin-ab297a118/'
+
+socials = [
+    {icon="social_twitter", url='https://twitter.com/MADLAB96', name='Twitter'},
+    {icon="social_github", url='https://github.com/MADLAB96', name='GitHub'},
+    {icon="social_linkedIn", url='https://www.linkedin.com/in/mitchell-dzurisin-ab297a118/', name='LinkedIn'},
+]
+
+after_dark_menu = [
+    {url = "$BASE_URL", name = "Posts"},
+    {url = "$BASE_URL/about", name = "About"},
+    {url = "$BASE_URL/projects", name = "Projects"},
+]

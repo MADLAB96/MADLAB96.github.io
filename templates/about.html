@@ -1,0 +1,32 @@
+{% extends "index.html" %}
+
+{% block content %}
+    {% block header %}
+        {{ super() }}
+    {% endblock header %}
+
+<article>
+    <header>
+        <h1 itemprop="headline">{{ page.title }}</h1>
+    </header>
+    <div itemprop="articleBody">
+      {{ page.content | safe }}
+    </div>
+
+    {% block page_footer %}
+        <footer>
+            <hr>
+            <p>
+                {% if config.extra.socials %}
+                    {% for social in config.extra.socials %}
+                        <a href="{{ social.url }}">{{ social.name }}</a>
+                    {% endfor %}
+                {% endif %}
+            </p>
+            {% block extra_footer %}
+            {% endblock extra_footer %}
+        </footer>
+    {% endblock page_footer %}
+</article>
+
+{% endblock content %}
