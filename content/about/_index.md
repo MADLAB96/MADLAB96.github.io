@@ -1,5 +1,3 @@
 +++
-title = "About"
-path = "about"
-template = "about.html"
+title = "About Me"
 +++

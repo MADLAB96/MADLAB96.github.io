@@ -11,7 +11,7 @@ body {
   font-size: 1rem;
   line-height: 1.5rem;
   margin: 0;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  font-family: FiraCode, FiraCode-Bold;
   word-wrap: break-word
 }
 
@@ -180,7 +180,7 @@ a:hover {
 .hack, .hack blockquote, .hack code, .hack em, .hack h1, .hack h2, .hack h3, .hack h4, .hack h5, .hack h6, .hack strong {
   font-size: 1rem;
   font-style: normal;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif
+  font-family: FiraCode, FiraCode-Bold;
 }
 
 .hack blockquote, .hack code, .hack em, .hack strong {
@@ -224,7 +224,8 @@ a:hover {
 
 .hack h2, .hack h3, .hack h4, .hack h5, .hack h6 {
   position: relative;
-  margin-bottom: 1.75rem
+  margin-bottom: 1.75rem;
+  margin-top: 1.75rem;
 }
 
 .hack h2:before, .hack h3:before, .hack h4:before, .hack h5:before, .hack h6:before {
@@ -871,7 +872,7 @@ select.form-control {
 }
 
 .dark, .dark pre {
-  background-color: #000
+  background-color: #114B5F
 }
 
 .dark pre {
@@ -995,3 +996,17 @@ select.form-control {
   color: #fff;
   border-color: #ccc
 }
+
+// FiraCode Fonts:
+@mixin font($font-family, $font-file) {
+  @font-face {
+    font-family: $font-family;
+    src: url($font-file+'.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+
+@include font('FiraCode', '/font/FiraCode/FiraCode-Regular');
+@include font('FiraCode-Bold', '/font/FiraCode/FiraCode-Bold');

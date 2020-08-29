@@ -1,3 +1,4 @@
+<!-- meta function, displays the publish date, minutes to read. -->
 {% macro meta(page) %}
     <svg style="margin-bottom:-3px" class="i-clock" viewBox="0 0 32 32"
          width="16" height="16" fill="none" stroke="currentcolor"
@@ -15,6 +16,7 @@
     {% if page.date %}Published: {{ page.date | date(format="%F") }}{% endif %}
 {% endmacro meta %}
 
+<!-- page_in_list function, creates a list of post links.  -->
 {% macro page_in_list(page) %}
     <article itemscope itemtype="http://schema.org/CreativeWork">
         <header>
@@ -23,11 +25,33 @@
                 <span class="muted">{{ self::meta(page=page) }}</span>
             </h2>
         </header>
-        {% if page.summary %}
+
+        {% if page.summary and not page.extra.thumbnail %}
             <div itemprop="summary">
                 {{ page.summary | safe }}
                 <nav class="readmore"><a itemprop="url" href="{{ page.permalink | safe }}">Read More&nbsp;&raquo;</a></nav>
             </div>
         {% endif %}
+
+        <!-- 
+            project solution:
+                - I will just have to control this internally
+                - Project must have extra.thumbnail and summary. 
+          -->
+        {% if page.summary and page.extra.thumbnail %}
+            {% set url = get_url(path=page.extra.thumbnail, lang="en") %}
+
+            <div itemprop="summaryWithThumbnail">
+                <div>
+                    <img style="width:200px;" src="{{ url }}">
+                </div>
+                <div class="summaryBlock">
+                    {{ page.summary | safe }}
+                    <nav class="readmore"><a itemprop="url" href="{{ page.permalink | safe }}">Read More&nbsp;&raquo;</a></nav>
+                </div>
+            </div>
+
+        {% endif %}
     </article>
 {% endmacro page_in_list %}
+

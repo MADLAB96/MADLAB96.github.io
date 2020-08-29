@@ -84,10 +84,28 @@ html {
 article [itemprop="description"], article [itemprop="summary"] {
   margin-bottom: 20px;
   margin-top: 20px;
+  margin-left: 20px;
 }
 
 article [itemprop="summary"] p {
   margin: 0;
+}
+
+article [itemprop="description"], article [itemprop="summaryWithThumbnail"] {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  display: flex;
+}
+
+article [itemprop="summaryWithThumbnail"] p {
+  margin: 0;
+}
+
+article [itemprop="summaryWithThumbnail"] .summaryBlock {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 20px;
 }
 
 @media screen and (min-width: 768px) {
