@@ -7,12 +7,12 @@ tags = ["diy", "keyboard"]
 categories = ["Projects"]
 
 [extra]
-thumbnail = "/images/hhkb.jpg"
+thumbnail = "/images/thumbnails/hhkb.jpg"
 +++
 
 ## HHKB Pro 2
 
-{{ resize_image(path="photos/hhkb.jpg", width=750, height=750, op="fit") }}
+{{ resize_image(path="photos/hhkb.jpg", width=500, height=100, op="fit_width") }}
 
 My current everyday keyboard, the [HHKB Pro 2](https://www.hhkeyboard.com/uk/products/pro2/). This is the older model that I purchased second hand off of [/r/mechmarket](https://www.reddit.com/r/mechmarket/). It definitely took me a while to get used to this one, but once I modded it with silencing rings, lube, and the keycaps it is probably my favorite. 
 
@@ -23,7 +23,8 @@ In the future I'll want to continue to mod this with:
 
 ## KBD75v2
 
-{{ resize_image(path="photos/kbd75+tombo.jpg", width=750, height=750, op="fit") }}
+{{ resize_image(path="photos/kbd75+tombo.jpg", width=500, height=100, op="fit_width") }}
+
 The sassy boy is Tombo btw. 
 
 This is my first *real* custom build that I finished sometime in March 2020. I had just started a new job and decided to hop right into the hobby with a fully custom, mid-range build. The whole thing ended up being about $400 in total, but honestly probably more with the soldering equipment and other stuff that was needed. 
