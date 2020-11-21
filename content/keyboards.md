@@ -1,5 +1,5 @@
 +++
-title = "My keyboards"
+title = "my keyboards"
 date = 2020-11-20
 
 [taxonomies]
@@ -25,7 +25,7 @@ In the future I'll want to continue to mod this with:
 
 {{ resize_image(path="photos/kbd75+tombo.jpg", width=500, height=100, op="fit_width") }}
 
-The sassy boy is Tombo btw. 
+The sleepy boy is Tombo. 
 
 This is my first *real* custom build that I finished sometime in March 2020. I had just started a new job and decided to hop right into the hobby with a fully custom, mid-range build. The whole thing ended up being about $400 in total, but honestly probably more with the soldering equipment and other stuff that was needed. 
 

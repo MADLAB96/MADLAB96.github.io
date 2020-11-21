@@ -10,17 +10,19 @@ Employed at [Zinc Partners](https://www.zincpartners.us/).
 
 # Professional Interests: 
 * software architecture
-* backend APIs
+* backend apis
 * full stack web
 
 # Hobbies (online): 
 * chatbots (IRC, Discord)
-* ultra budget homelab (chatbot, plex, and minecraft)
+* ultra budget homelab (chatbot, plex, and minecraft hosting)
 
 # Hobbies (offline):
 * custom keyboard builds
+* diy electronics
 * cooking
 * dog training
+* tabletop rpgs
 
 <!-- more -->
 
