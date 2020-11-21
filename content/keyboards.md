@@ -7,12 +7,15 @@ tags = ["diy", "keyboard"]
 categories = ["Projects"]
 
 [extra]
-thumbnail = "/images/thumbnails/hhkb.jpg"
+thumbnail = "/images/thumbnails/hhkb-small.jpg"
 +++
+
+Documenting my collection of mechanical keyboards, lessons learned, etc.
+<!-- more -->
 
 ## HHKB Pro 2
 
-{{ resize_image(path="photos/hhkb.jpg", width=500, height=100, op="fit_width") }}
+{{ resize_image(path="images/hhkb.jpg", width=500, height=100, op="fit_width") }}
 
 My current everyday keyboard, the [HHKB Pro 2](https://www.hhkeyboard.com/uk/products/pro2/). This is the older model that I purchased second hand off of [/r/mechmarket](https://www.reddit.com/r/mechmarket/). It definitely took me a while to get used to this one, but once I modded it with silencing rings, lube, and the keycaps it is probably my favorite. 
 
@@ -23,7 +26,7 @@ In the future I'll want to continue to mod this with:
 
 ## KBD75v2
 
-{{ resize_image(path="photos/kbd75+tombo.jpg", width=500, height=100, op="fit_width") }}
+{{ resize_image(path="images/kbd75+tombo.jpg", width=500, height=100, op="fit_width") }}
 
 The sleepy boy is Tombo. 
 
